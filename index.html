@@ -2,32 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svana Wellness</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero-section">
-        <img src="assets/Logo-and-Background.png" alt="Svana Background" class="hero-image" />
-    </div>
+    <div class="background-banner"></div>
 
     <div class="tiles-container">
-        <div class="tile" onclick="location.href='video1.html'">
-            <div class="label">Morning Yoga</div>
-            <div class="description">5-Min Sunrise Flow</div>
-            <div class="duration">6m 30s</div>
-        </div>
-        <div class="tile" onclick="location.href='video2.html'">
-            <div class="label">Breathwork</div>
-            <div class="description">Deep Calm Breath</div>
-            <div class="duration">8m 12s</div>
-        </div>
-        <div class="tile" onclick="location.href='video3.html'">
-            <div class="label">Meditation</div>
-            <div class="description">Peace Within: Silent Focus</div>
-            <div class="duration">7m</div>
-        </div>
+        <a href="video1.html" class="tile" style="background-image: url('morning.png');">
+            <div class="tile-title">Morning Yoga</div>
+            <div class="tile-desc">5-Min Sunrise Flow</div>
+            <div class="tile-time">6m 30s</div>
+        </a>
+        <a href="video2.html" class="tile" style="background-image: url('breathwork.png');">
+            <div class="tile-title">Breathwork</div>
+            <div class="tile-desc">Deep Calm Breath</div>
+            <div class="tile-time">8m 12s</div>
+        </a>
+        <a href="video3.html" class="tile" style="background-image: url('meditation.png');">
+            <div class="tile-title">Meditation</div>
+            <div class="tile-desc">Peace Within</div>
+            <div class="tile-time">7m</div>
+        </a>
     </div>
 </body>
 </html>

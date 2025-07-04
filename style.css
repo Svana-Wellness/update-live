@@ -2,55 +2,67 @@
 body {
     margin: 0;
     font-family: 'Georgia', serif;
-    background: linear-gradient(#f9f3ec, #fff);
-    color: #3a2c1e;
+    background-color: #fffaf3;
+    color: #2c1d00;
+    text-align: center;
 }
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    max-height: 600px;
-    overflow: hidden;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+.background-banner {
+    background-image: url('Logo and Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
 }
 
 .tiles-container {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 }
 
 .tile {
+    display: block;
     position: relative;
     background-size: cover;
     background-position: center;
+    height: 200px;
     border-radius: 20px;
-    padding: 20px;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 500;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
 }
 
-.label {
-    font-size: 1.2rem;
+.tile-title {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 5px 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-.description, .duration {
-    font-size: 1rem;
+.tile-desc {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.tile-time {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
 }

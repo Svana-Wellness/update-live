@@ -1,68 +1,68 @@
 
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #fffaf3;
-    color: #2c1d00;
-    text-align: center;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to bottom, #fff8f0, #f4e8d6);
+  color: #333;
 }
 
-.background-banner {
-    background-image: url('Logo and Background.png');
-    background-size: cover;
-    background-position: center;
-    height: 550px;
+.header {
+  text-align: center;
+  padding: 20px 10px 0;
 }
 
-.tiles-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.tile {
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-decoration: none;
+.daily-quote {
+  font-size: 1rem;
+  color: #5a5a5a;
+  font-style: italic;
 }
 
-.tile-title {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 5px 12px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
-.tile-desc {
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 4px 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1em;
+.video-box {
+  position: relative;
+  cursor: pointer;
 }
 
-.tile-time {
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 4px 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1em;
+.video-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.overlay p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 8px;
+  border-radius: 8px;
 }

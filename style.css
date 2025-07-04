@@ -1,68 +1,76 @@
 
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #fffaf3;
-    color: #2c1d00;
-    text-align: center;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f6f5f3;
+  color: #333;
 }
 
-.background-banner {
-    background-image: url('Logo and Background.png');
-    background-size: cover;
-    background-position: center;
-    height: 550px;
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: linear-gradient(to bottom, #fff, #e3f2f1);
 }
 
-.tiles-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+.logo {
+  max-height: 60px;
+  margin-bottom: 10px;
 }
 
-.tile {
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-decoration: none;
+.site-title {
+  font-size: 2.2rem;
+  margin: 0.2rem 0;
+  font-weight: bold;
 }
 
-.tile-title {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 5px 12px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
+.site-subtitle {
+  font-size: 1rem;
+  color: #666;
 }
 
-.tile-desc {
-    position: absolute;
-    bottom: 30px;
-    left: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 4px 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1em;
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
 }
 
-.tile-time {
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
-    background-color: rgba(0, 0, 0, 0.45);
-    padding: 4px 10px;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1em;
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  height: 200px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: rgba(0,0,0,0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  align-self: flex-start;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-duration {
+  font-size: 0.9rem;
 }

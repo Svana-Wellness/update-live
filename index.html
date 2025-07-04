@@ -1,44 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Svana Wellness</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Svana Wellness</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <img src="Logo.png" alt="Svana Logo" class="logo" />
-        <h1 class="title">Svana Wellness</h1>
-        <p class="subtitle">Breathe in stillness today…</p>
-
-        <div class="card" onclick="location.href='video1.html'">
-            <img src="morning.png" alt="Morning Yoga" />
-            <div class="overlay">
-                <h2>Morning Yoga</h2>
-                <p>5-Min Sunrise Flow</p>
-                <span>6m 30s</span>
-            </div>
-        </div>
-
-        <div class="card" onclick="location.href='video2.html'">
-            <img src="breathwork.png" alt="Breathwork" />
-            <div class="overlay">
-                <h2>Breathwork</h2>
-                <p>Deep Calm Breath</p>
-                <span>8m 12s</span>
-            </div>
-        </div>
-
-        <div class="card" onclick="location.href='video3.html'">
-            <img src="meditation.png" alt="Meditation" />
-            <div class="overlay">
-                <h2>Meditation</h2>
-                <p>Peace Within</p>
-                <span>7m</span>
-            </div>
-        </div>
+  <header>
+    <img src="Logo.png" alt="Svana Logo" class="logo" />
+    <div class="top-right-buttons">
+      <a href="https://wa.me/?text=Try%20Svana%20Wellness%20for%20daily%20monk-led%20yoga%20%26%20meditation%20https://pulic.vercel.app" target="_blank">📤 Share</a>
+      <a href="feedback.html">📝 Feedback</a>
     </div>
+    <h1 class="tagline">Breathe in stillness today...</h1>
+  </header>
+  <main>
+    <div class="card-container">
+      <a href="video1.html" class="card" style="background-image: url('morning.png');">
+        <div class="overlay-text">
+          <h2>Morning Yoga</h2>
+          <p>5-Min Sunrise Flow | 6m 12s</p>
+        </div>
+      </a>
+      <a href="video2.html" class="card" style="background-image: url('breathwork.png');">
+        <div class="overlay-text">
+          <h2>Breathwork</h2>
+          <p>Deep Breathing Practice | 4m 45s</p>
+        </div>
+      </a>
+      <a href="video3.html" class="card" style="background-image: url('meditation.png');">
+        <div class="overlay-text">
+          <h2>Meditation</h2>
+          <p>Mindful Silence | 7m 00s</p>
+        </div>
+      </a>
+    </div>
+  </main>
 </body>
 </html>

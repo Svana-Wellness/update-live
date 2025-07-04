@@ -1,57 +1,68 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #fff9ec, #f0e7da);
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to bottom, #fff8f0, #f4e8d6);
   color: #333;
 }
-header {
+
+.header {
   text-align: center;
-  padding: 1rem;
-  position: relative;
+  padding: 20px 10px 0;
 }
+
 .logo {
-  height: 80px;
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
 }
-.top-right-buttons {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+
+.daily-quote {
+  font-size: 1rem;
+  color: #5a5a5a;
+  font-style: italic;
 }
-.top-right-buttons a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-.tagline {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  color: #666;
-}
-.card-container {
+
+.container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 2rem;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
-.card {
-  width: 280px;
-  height: 160px;
-  border-radius: 15px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
+
+.video-box {
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-decoration: none;
+  cursor: pointer;
 }
-.overlay-text {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
+
+.video-img {
   width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.overlay p {
+  margin: 4px 0;
+  font-size: 1rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 8px;
+  border-radius: 8px;
 }

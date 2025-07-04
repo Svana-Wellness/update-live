@@ -6,37 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Svana Wellness</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="Logo.png" alt="Svana Logo" class="logo" />
-    <div class="top-right-buttons">
-      <a href="https://wa.me/?text=Try%20Svana%20Wellness%20for%20daily%20monk-led%20yoga%20%26%20meditation%20https://pulic.vercel.app" target="_blank">📤 Share</a>
-      <a href="feedback.html">📝 Feedback</a>
+  <div class="header">
+    <img src="logo.png" alt="Svana Logo" class="logo"/>
+    <h1 class="daily-quote">"Find calm in your breath, and peace in your day."</h1>
+  </div>
+
+  <div class="container">
+    <div class="video-box" onclick="window.location='video1.html'">
+      <img src="morning.png" class="video-img" />
+      <div class="overlay">
+        <h2>Morning Yoga</h2>
+        <p>Awaken your body and spirit</p>
+        <span class="duration">7 min</span>
+      </div>
     </div>
-    <h1 class="tagline">Breathe in stillness today...</h1>
-  </header>
-  <main>
-    <div class="card-container">
-      <a href="video1.html" class="card" style="background-image: url('morning.png');">
-        <div class="overlay-text">
-          <h2>Morning Yoga</h2>
-          <p>5-Min Sunrise Flow | 6m 12s</p>
-        </div>
-      </a>
-      <a href="video2.html" class="card" style="background-image: url('breathwork.png');">
-        <div class="overlay-text">
-          <h2>Breathwork</h2>
-          <p>Deep Breathing Practice | 4m 45s</p>
-        </div>
-      </a>
-      <a href="video3.html" class="card" style="background-image: url('meditation.png');">
-        <div class="overlay-text">
-          <h2>Meditation</h2>
-          <p>Mindful Silence | 7m 00s</p>
-        </div>
-      </a>
+
+    <div class="video-box" onclick="window.location='video2.html'">
+      <img src="breathwork.png" class="video-img" />
+      <div class="overlay">
+        <h2>Breathwork</h2>
+        <p>Calm your nerves, regain focus</p>
+        <span class="duration">6 min</span>
+      </div>
     </div>
-  </main>
+
+    <div class="video-box" onclick="window.location='video3.html'">
+      <img src="meditation.png" class="video-img" />
+      <div class="overlay">
+        <h2>Meditation</h2>
+        <p>Still your thoughts, go inward</p>
+        <span class="duration">8 min</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

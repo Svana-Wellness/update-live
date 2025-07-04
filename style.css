@@ -66,13 +66,3 @@ body {
   padding: 4px 8px;
   border-radius: 8px;
 }
-
-
-/* Header with full image background */
-.header-bg {
-  width: 100%;
-  height: 180px;
-  background: url('header-bg.png') no-repeat center center;
-  background-size: cover;
-  border-bottom: 1px solid #ccc;
-}

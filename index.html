@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Svana Wellness</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header-bg"></div>
+  <div class="header">
+    <img src="logo.png" alt="Svana Logo" class="logo"/>
+    <h1 class="daily-quote">"Find calm in your breath, and peace in your day."</h1>
+  </div>
 
-  <div class="tiles">
-    <div class="tile" onclick="location.href='video1.html'">
-      <div class="tile-title">Morning Yoga</div>
-      <div class="tile-description">5-Min Sunrise Flow</div>
-      <div class="tile-duration">6m 30s</div>
+  <div class="container">
+    <div class="video-box" onclick="window.location='video1.html'">
+      <img src="morning.png" class="video-img" />
+      <div class="overlay">
+        <h2>Morning Yoga</h2>
+        <p>Awaken your body and spirit</p>
+        <span class="duration">7 min</span>
+      </div>
     </div>
 
-    <div class="tile" onclick="location.href='video2.html'">
-      <div class="tile-title">Breathwork</div>
-      <div class="tile-description">Deep Calm Breath</div>
-      <div class="tile-duration">8m 12s</div>
+    <div class="video-box" onclick="window.location='video2.html'">
+      <img src="breathwork.png" class="video-img" />
+      <div class="overlay">
+        <h2>Breathwork</h2>
+        <p>Calm your nerves, regain focus</p>
+        <span class="duration">6 min</span>
+      </div>
     </div>
 
-    <div class="tile" onclick="location.href='video3.html'">
-      <div class="tile-title">Meditation</div>
-      <div class="tile-description">Peace Within: Silent Focus</div>
-      <div class="tile-duration">7m</div>
+    <div class="video-box" onclick="window.location='video3.html'">
+      <img src="meditation.png" class="video-img" />
+      <div class="overlay">
+        <h2>Meditation</h2>
+        <p>Still your thoughts, go inward</p>
+        <span class="duration">8 min</span>
+      </div>
     </div>
   </div>
 </body>

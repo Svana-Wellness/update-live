@@ -2,45 +2,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Svana Wellness</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Svana Wellness</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="header">
-    <img src="logo.png" alt="Svana Logo" class="logo"/>
-    <h1 class="daily-quote">"Find calm in your breath, and peace in your day."</h1>
-  </div>
-
-  <div class="container">
-    <div class="video-box" onclick="window.location='video1.html'">
-      <img src="morning.png" class="video-img" />
-      <div class="overlay">
-        <h2>Morning Yoga</h2>
-        <p>Awaken your body and spirit</p>
-        <span class="duration">7 min</span>
-      </div>
+    <div class="hero-section">
+        <img src="assets/Logo-and-Background.png" alt="Svana Background" class="hero-image" />
     </div>
 
-    <div class="video-box" onclick="window.location='video2.html'">
-      <img src="breathwork.png" class="video-img" />
-      <div class="overlay">
-        <h2>Breathwork</h2>
-        <p>Calm your nerves, regain focus</p>
-        <span class="duration">6 min</span>
-      </div>
+    <div class="tiles-container">
+        <div class="tile" onclick="location.href='video1.html'">
+            <div class="label">Morning Yoga</div>
+            <div class="description">5-Min Sunrise Flow</div>
+            <div class="duration">6m 30s</div>
+        </div>
+        <div class="tile" onclick="location.href='video2.html'">
+            <div class="label">Breathwork</div>
+            <div class="description">Deep Calm Breath</div>
+            <div class="duration">8m 12s</div>
+        </div>
+        <div class="tile" onclick="location.href='video3.html'">
+            <div class="label">Meditation</div>
+            <div class="description">Peace Within: Silent Focus</div>
+            <div class="duration">7m</div>
+        </div>
     </div>
-
-    <div class="video-box" onclick="window.location='video3.html'">
-      <img src="meditation.png" class="video-img" />
-      <div class="overlay">
-        <h2>Meditation</h2>
-        <p>Still your thoughts, go inward</p>
-        <span class="duration">8 min</span>
-      </div>
-    </div>
-  </div>
 </body>
 </html>

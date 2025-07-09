@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Svana Wellness</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-image: url('header-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+    .header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .logo-large {
+      max-width: 100px;
+    }
+    .brand-name {
+      font-size: 2.5rem;
+      margin: 10px 0 0;
+      font-weight: bold;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-style: italic;
+      color: #ffd;
+    }
+    .tiles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .tile {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+    .tile:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
+    .tile a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+    .tile-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .tile-sub {
+      font-size: 1rem;
+      margin-top: 5px;
+      color: #ddd;
+    }
+    @media (min-width: 768px) {
+      .tiles {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .tile {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="Svana Logo.png" alt="Svana Logo" class="logo-large">
+    <h1 class="brand-name">Svana Wellness</h1>
+    <p class="tagline">Breathe in stillness today…</p>
+  </div>
+
+  <div class="tiles">
+    <div class="tile">
+      <a href="morning_yoga.html">
+        <div class="tile-title">Morning Yoga – Prabhāta Yoga</div>
+        <div class="tile-sub">Awaken your body with sunrise energy • Duration: 15 min</div>
+      </a>
+    </div>
+    <div class="tile">
+      <a href="breathwork.html">
+        <div class="tile-title">Breathwork – Praṇāyāma</div>
+        <div class="tile-sub">Center your breath and release anxiety • Duration: 10 min</div>
+      </a>
+    </div>
+    <div class="tile">
+      <a href="guided_meditation.html">
+        <div class="tile-title">Guided Meditation – Dhāraṇā</div>
+        <div class="tile-sub">Find clarity in stillness • Duration: 12 min</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

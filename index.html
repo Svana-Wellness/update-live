@@ -2,42 +2,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Svana Wellness</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Svana Wellness</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #fff8f0, #f4e8d6);
+            color: #333;
+        }
+        .header {
+            background: url('header-bg.png') no-repeat center;
+            background-size: cover;
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #fff;
+        }
+        .quote {
+            font-size: 1rem;
+            font-style: italic;
+            margin-top: 10px;
+            color: #ffe;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px 15px;
+        }
+        .video-tile {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .video-tile img {
+            width: 100%;
+            height: auto;
+        }
+        .video-info {
+            padding: 15px;
+        }
+        .video-info h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #2c2c2c;
+        }
+        .video-info p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="header-bg.png" alt="Svana Wellness Logo" class="logo" />
-    <h1>Svana Wellness</h1>
-    <p class="subtitle">Breathe in stillness today…</p>
-  </header>
-  <main>
-    <section class="tile" onclick="location.href='video1.html'">
-      <img src="morning.png" alt="Morning Yoga" />
-      <div class="text-block">
-        <h2>Morning Yoga</h2>
-        <p>5-Min Sunrise Flow for Beginners</p>
-        <span>6m 30s</span>
-      </div>
-    </section>
-    <section class="tile" onclick="location.href='video2.html'">
-      <img src="breathwork.png" alt="Breathwork" />
-      <div class="text-block">
-        <h2>Breathwork</h2>
-        <p>Calm the Mind – Prāṇāyāma</p>
-        <span>5m</span>
-      </div>
-    </section>
-    <section class="tile" onclick="location.href='video3.html'">
-      <img src="meditation.png" alt="Meditation" />
-      <div class="text-block">
-        <h2>Meditation</h2>
-        <p>Peace Within: Silent Focus</p>
-        <span>7m</span>
-      </div>
-    </section>
-  </main>
+    <div class="header">
+        <h1>Svana Wellness</h1>
+        <div class="quote">"When you do things from your soul, you feel a river moving in you, a joy"</div>
+    </div>
+    <div class="container">
+        <div class="video-tile">
+            <img src="morning.png" alt="Morning Yoga">
+            <div class="video-info">
+                <h2>Morning Yoga</h2>
+                <p>Duration: 15 min | Breath-led body activation</p>
+            </div>
+        </div>
+        <div class="video-tile">
+            <img src="breath.png" alt="Breathwork">
+            <div class="video-info">
+                <h2>Breathwork</h2>
+                <p>Duration: 10 min | Calm the nervous system</p>
+            </div>
+        </div>
+        <div class="video-tile">
+            <img src="meditate.png" alt="Guided Meditation">
+            <div class="video-info">
+                <h2>Guided Meditation</h2>
+                <p>Duration: 12 min | Let go and return inward</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

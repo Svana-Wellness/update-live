@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Guided Meditation – Dhāraṇā</title>
-    <style>
-        body {
-            font-family: 'Playfair Display', serif;
-            background: linear-gradient(to bottom, #fff8f0, #f4e8d6);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #333;
-        }
-        .header {
-            background-image: url('header-bg.png');
-            background-size: cover;
-            background-position: center;
-            padding: 40px 10px 20px;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .video-player {
-            margin: 20px auto;
-            max-width: 90%;
-        }
-        .info {
-            padding: 20px;
-        }
-        .info p {
-            margin: 10px 0;
-        }
-        .tags {
-            margin-top: 10px;
-        }
-        .tag {
-            display: inline-block;
-            background-color: #e6d8c3;
-            padding: 5px 10px;
-            border-radius: 15px;
-            margin: 2px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guided Meditation – Dhāraṇā</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff9f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 0;
+      color: #666;
+    }
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border: none;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+    .details {
+      text-align: left;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .tags span {
+      background-color: #eee;
+      padding: 6px 12px;
+      margin: 4px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Guided Meditation – Dhāraṇā</h1>
+  <div class="container">
+    <h1>Guided Meditation – Dhāraṇā</h1>
+    <h2>A monk-led meditation to awaken inner silence.</h2>
+    <iframe src="https://www.youtube.com/embed/aIpAqhcgI4c" allowfullscreen></iframe>
+    <div class="details">
+      <p><strong>Duration:</strong> 18 minutes</p>
+      <p><strong>Tags:</strong></p>
+      <div class="tags">
+        <span>Awareness</span><span>Mindfulness</span><span>Balance</span>
+      </div>
     </div>
-    <div class="video-player">
-        <video width="100%" height="auto" controls>
-            <source src="guided_meditation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="info">
-        <p><strong>Description:</strong> Drop into stillness through gentle guidance that helps you focus, release, and realign.</p>
-        <p><strong>Duration:</strong> 14 mins</p>
-        <div class="tags">
-            <span class='tag'>Focus</span> <span class='tag'>Mental Clarity</span> <span class='tag'>Inner Peace</span>
-        </div>
-    </div>
+  </div>
 </body>
 </html>

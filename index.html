@@ -5,98 +5,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Svana Wellness</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      background: url('header-bg.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff8f0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 80px;
-    }
-    .header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      z-index: 1000;
-    }
-    .header img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .header h1 {
-      font-size: 1.5rem;
-      color: white;
-      margin: 0;
-    }
-    .tiles {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 90%;
-      max-width: 500px;
-    }
-    .tile {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .tile img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .tile .text {
-      padding: 15px;
-      text-align: center;
-      color: #fff;
-    }
-    .tile .text h2 {
-      margin: 5px 0 0;
-      font-size: 1.1rem;
-    }
-    .sanskrit {
-      font-style: italic;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="header">
-    <img src="header-bg.png" alt="Logo" />
-    <h1>Svana Wellness</h1>
+    <img src="Svana Logo.png" alt="Svana Logo" class="logo" />
+    <h1 class="brand">Svana Wellness</h1>
+    <p class="tagline">Breathe in stillness today…</p>
   </div>
 
-  <div class="tiles">
+  <div class="content">
     <div class="tile">
-      <img src="morning.png" alt="Morning Yoga" />
-      <div class="text">
-        <div class="sanskrit">Prabhāta Yoga</div>
-        <h2>Morning Yoga</h2>
-      </div>
+      <img src="morning.png" alt="Morning Yoga" class="tile-img" />
+      <h2>Morning Yoga – Prabhāta Yoga</h2>
+      <p class="description">5-Min Sunrise Flow for Beginners</p>
+      <p class="duration">6m 30s</p>
     </div>
     <div class="tile">
-      <img src="breathwork.png" alt="Breathwork" />
-      <div class="text">
-        <div class="sanskrit">Praṇāyāma</div>
-        <h2>Breathwork</h2>
-      </div>
+      <img src="breathwork.png" alt="Breathwork" class="tile-img" />
+      <h2>Breathwork – Prāṇāyāma</h2>
+      <p class="description">Calm the Mind</p>
+      <p class="duration">5m</p>
     </div>
     <div class="tile">
-      <img src="meditation.png" alt="Guided Meditation" />
-      <div class="text">
-        <div class="sanskrit">Dhāraṇā</div>
-        <h2>Guided Meditation</h2>
-      </div>
+      <img src="meditation.png" alt="Meditation" class="tile-img" />
+      <h2>Meditation – Dhyāna</h2>
+      <p class="description">Peace Within: Silent Focus</p>
+      <p class="duration">7m</p>
     </div>
   </div>
 </body>

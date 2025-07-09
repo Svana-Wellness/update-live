@@ -3,55 +3,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Svana Wellness</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="hero">
-    <img src="images/logo.png" alt="Svana Logo" class="logo"/>
+  <header>
+    <img src="header-bg.png" alt="Svana Wellness Logo" class="logo" />
     <h1>Svana Wellness</h1>
-    <p class="tagline">Breathe in stillness today…</p>
-  </div>
-
-  <div id="tiles" class="tiles-container">
-    <!-- Example tile -->
-    <div class="tile" data-expire="true" data-created="">
-      <img src="images/morning_yoga.jpg" alt="Morning Yoga" />
-      <div class="text">
+    <p class="subtitle">Breathe in stillness today…</p>
+  </header>
+  <main>
+    <section class="tile" onclick="location.href='video1.html'">
+      <img src="morning.png" alt="Morning Yoga" />
+      <div class="text-block">
         <h2>Morning Yoga</h2>
-        <p class="subtext">5-Min Sunrise Flow for Beginners</p>
-        <span class="duration">6m 30s</span>
+        <p>5-Min Sunrise Flow for Beginners</p>
+        <span>6m 30s</span>
       </div>
-    </div>
-
-    <div class="tile" data-expire="true" data-created="">
-      <img src="images/breathwork.jpg" alt="Breathwork" />
-      <div class="text">
+    </section>
+    <section class="tile" onclick="location.href='video2.html'">
+      <img src="breathwork.png" alt="Breathwork" />
+      <div class="text-block">
         <h2>Breathwork</h2>
-        <p class="subtext">Calm the Mind – Prāṇāyāma</p>
-        <span class="duration">5m</span>
+        <p>Calm the Mind – Prāṇāyāma</p>
+        <span>5m</span>
       </div>
-    </div>
-
-    <div class="tile" data-expire="true" data-created="">
-      <img src="images/meditation.jpg" alt="Meditation" />
-      <div class="text">
+    </section>
+    <section class="tile" onclick="location.href='video3.html'">
+      <img src="meditation.png" alt="Meditation" />
+      <div class="text-block">
         <h2>Meditation</h2>
-        <p class="subtext">Peace Within: Silent Focus</p>
-        <span class="duration">7m</span>
+        <p>Peace Within: Silent Focus</p>
+        <span>7m</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX'); // Replace with your Google Analytics ID
-  </script>
+    </section>
+  </main>
 </body>
 </html>

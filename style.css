@@ -13,30 +13,43 @@ body {
   background-size: cover;
   height: 300px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  padding: 0 20px;
   text-align: center;
 }
 
-.logo-large {
-  width: 200px;  /* increase from e.g. 80px */
-  height: auto;
-  margin-bottom: 10px;
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.brand {
-  display: inline-block;
-  font-size: 1.8em;
-  vertical-align: middle;
+.logo-left {
+  width: 80px;
+  height: auto;
+}
+
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #333;
   margin: 0;
 }
 
 .tagline {
-  margin-top: 5px;
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
   font-style: italic;
-  font-size: 1em;
+  color: #5a5a5a;
+  margin-top: 6px;
 }
 
 .content {

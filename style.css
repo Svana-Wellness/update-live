@@ -20,12 +20,10 @@ body {
   text-align: center;
 }
 
-.logo {
-  width: 60px;
+.logo-large {
+  width: 150px;  /* increase from e.g. 80px */
   height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .brand {

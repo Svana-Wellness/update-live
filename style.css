@@ -1,68 +1,74 @@
 
 body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   background: linear-gradient(to bottom, #fff8f0, #f4e8d6);
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.header {
+.hero {
   text-align: center;
-  padding: 20px 10px 0;
+  padding: 30px 20px;
 }
 
 .logo {
   width: 80px;
-  height: auto;
   margin-bottom: 10px;
 }
 
-.daily-quote {
-  font-size: 1rem;
-  color: #5a5a5a;
-  font-style: italic;
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
 }
 
-.container {
+.tagline {
+  font-style: italic;
+  color: #5a5a5a;
+  font-size: 1.1em;
+}
+
+.tiles-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
 
-.video-box {
+.tile {
   position: relative;
-  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.video-img {
+.tile img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: block;
 }
 
-.overlay {
+.text {
   position: absolute;
-  top: 15px;
+  bottom: 10px;
   left: 20px;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
 }
 
-.overlay h2 {
-  font-size: 1.5rem;
+.text h2 {
   margin: 0;
+  font-size: 1.2em;
 }
 
-.overlay p {
-  margin: 4px 0;
-  font-size: 1rem;
+.text .subtext {
+  font-size: 0.95em;
 }
 
 .duration {
-  font-size: 0.9rem;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
   background: rgba(0,0,0,0.5);
-  padding: 4px 8px;
+  padding: 2px 6px;
   border-radius: 8px;
+  font-size: 0.9em;
 }
